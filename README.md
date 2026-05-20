@@ -1,38 +1,29 @@
-# 将微信读书划线和笔记同步到Notion
+# WeRead2Notion
 
+将微信读书的书籍、划线和笔记同步到 Notion。
 
-本项目通过Github Action每天定时同步微信读书划线到Notion。
+本项目使用微信读书 API Key 读取数据，并通过 GitHub Actions 定时同步到 Notion。新版不再需要复制微信读书 Cookie。
 
-预览效果：https://book.malinkang.com
+预览效果：https://malinkang.notion.site/weread2notion
 
-> [!WARNING]  
-> 请不要在Page里面添加自己的笔记，有新的笔记的时候会删除原笔记重新添加。
+> [!WARNING]
+> WeRead2Notion 会在检测到书籍笔记更新时删除原来的同步页面，然后重新写入微信读书数据。请不要在同步生成的 Notion 书籍页面里添加自己的笔记、批注或其他重要内容，否则下次同步时可能会被删除且无法恢复。
 
+## 使用文档
 
-## 使用
+完整教程请查看：
 
-> [!IMPORTANT]  
-> 关注公众号获取教程
+https://www.notionhub.app/docs/weread2notion.html
 
-![扫码_搜索联合传播样式-标准色版](https://github.com/malinkang/weread2notion/assets/3365208/191900c6-958e-4f9b-908d-a40a54889b5e)
+文档里包含：
 
+- Notion 模板复制和授权
+- 微信读书 API Key 获取
+- GitHub Fork 和 Actions 配置
+- 常见问题排查
 
-## 群
-> [!IMPORTANT]  
-> 欢迎加入群讨论。可以讨论使用中遇到的任何问题，也可以讨论Notion使用，后续我也会在群中分享更多Notion自动化工具。微信群失效的话可以添加我的微信malinkang，我拉你入群。
+## 关注公众号
 
+如果你想获取后续更新，或了解更多 Notion 自动化工具，欢迎关注公众号：**Notion自动化**。
 
-| 微信群 | QQ群 |
-| --- | --- |
-| <div align="center"><img src="https://images.malinkang.com/2024/04/d54cd68602ccbb9e2747ce01f02280a3.jpg" width="50%"></div> | <div align="center"><img src="https://images.malinkang.com/2024/04/b225b17d60670e4a6ff3459bbde80d28.jpg" width="50%"></div> |
-
-
-## 捐赠
-
-如果你觉得本项目帮助了你，请作者喝一杯咖啡，你的支持是作者最大的动力。本项目会持续更新。
-
-| 支付宝支付 | 微信支付 |
-| --- | --- |
-| <div align="center"><img src="https://images.malinkang.com/2024/03/7fd0feb1145f19fab3821ff1d4631f85.jpg" width="50%"></div> | <div align="center"><img src="https://images.malinkang.com/2024/03/d34f577490a32d4440c8a22f57af41da.jpg" width="50%"></div> |
-
-
+![公众号：Notion自动化](https://cdn.notionhub.app/notionhub/gzh.jpg)
